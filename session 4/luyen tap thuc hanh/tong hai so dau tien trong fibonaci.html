@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var htmlStr = "";
+    var ketQua = 0;
+    function fibo(number) {
+        if (number == 1 || number == 2) {
+            return 1;
+        } else {
+            return fibo(number - 1) + fibo(number - 2);
+        }
+    }
+    for (var i = 1; i <= 20; i++) {
+        var tong = fibo(i);
+        htmlStr += "<td>" + tong + "</td>";
+        ketQua += tong;
+    }
+    document.write(ketQua);
+</script>
+</body>
+</html>

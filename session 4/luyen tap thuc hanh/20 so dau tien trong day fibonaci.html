@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var n,f0,f1,f2;
+        n = 20;
+        f0 = 0;
+        f1 = 1;
+        document.write(f0 + " ");
+        document.write(f1) + " ";
+        for (var i = 0; i < n-2; i++){
+
+            f2 = f1 + f0;
+            document.write(" "+ f2 +" ");
+            f0 = f1;
+            f1 = f2;
+        }
+    </script>
+</body>
+</html>
